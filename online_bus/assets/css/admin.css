@@ -1,0 +1,233 @@
+/*
+ * Shreenathji Travels - Admin Panel Styles
+ */
+
+:root {
+  --admin-sidebar-width: 260px;
+  --admin-header-height: 68px;
+  --admin-bg: #f1f5f9;
+  --admin-card-bg: #ffffff;
+  --admin-border: #e2e8f0;
+}
+
+body.admin-body {
+  background-color: var(--admin-bg);
+  min-height: 100vh;
+  display: flex;
+}
+
+/* Sidebar */
+.admin-sidebar {
+  width: var(--admin-sidebar-width);
+  background: #0f172a;
+  color: #94a3b8;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+  transition: var(--transition-fast);
+}
+
+.admin-sidebar-brand {
+  height: var(--admin-header-height);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+.admin-sidebar-brand img {
+  height: 38px;
+  filter: brightness(0) invert(1);
+}
+
+.admin-nav {
+  list-style: none;
+  padding: 16px 12px;
+  margin: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.admin-nav-item {
+  margin-bottom: 4px;
+}
+.admin-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  color: #94a3b8;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: var(--transition-fast);
+}
+.admin-nav-link:hover, .admin-nav-link.active {
+  color: #ffffff;
+  background: rgba(37, 99, 235, 0.2);
+  border-left: 3px solid #3b82f6;
+}
+.admin-nav-link i {
+  font-size: 1.1rem;
+  width: 22px;
+  text-align: center;
+}
+
+.admin-sidebar-footer {
+  padding: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Main Content Area */
+.admin-main-wrap {
+  margin-left: var(--admin-sidebar-width);
+  flex-grow: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Admin Top Header */
+.admin-top-header {
+  height: var(--admin-header-height);
+  background: #ffffff;
+  border-bottom: 1px solid var(--admin-border);
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.admin-content-body {
+  padding: 28px;
+  flex-grow: 1;
+}
+
+/* Stat Cards */
+.admin-stat-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 20px;
+  border: 1px solid var(--admin-border);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-fast);
+}
+.admin-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow);
+}
+.admin-stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+}
+.admin-stat-card.stat-success::before {
+  background: linear-gradient(90deg, #10b981, #059669);
+}
+.admin-stat-card.stat-warning::before {
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+}
+.admin-stat-card.stat-purple::before {
+  background: linear-gradient(90deg, #8b5cf6, #6d28d9);
+}
+
+.stat-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+/* Tables */
+.admin-table-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--admin-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  overflow: hidden;
+}
+.admin-table-header {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--admin-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.table-responsive {
+  margin: 0;
+}
+.admin-table {
+  margin-bottom: 0;
+}
+.admin-table th {
+  background: #f8fafc;
+  color: #475569;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--admin-border);
+}
+.admin-table td {
+  padding: 14px 20px;
+  vertical-align: middle;
+  font-size: 0.92rem;
+  border-bottom: 1px solid var(--admin-border);
+}
+
+/* Bus Image Preview Container */
+.bus-img-preview-box {
+  width: 100%;
+  max-width: 320px;
+  height: 180px;
+  border: 2px dashed #cbd5e1;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  overflow: hidden;
+  position: relative;
+  margin-top: 8px;
+}
+.bus-img-preview-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .admin-sidebar {
+    transform: translateX(-100%);
+  }
+  .admin-sidebar.show {
+    transform: translateX(0);
+  }
+  .admin-main-wrap {
+    margin-left: 0;
+  }
+}

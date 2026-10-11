@@ -1,0 +1,560 @@
+/* =======================================================
+   SHREENATHJI TRAVELS - HOMEPAGE V2 DESIGN SYSTEM
+   Ultra-Luxury Indian Travel Experience
+   ======================================================= */
+
+/* 1. Live Announcement Marquee */
+.live-marquee-container {
+  background: linear-gradient(90deg, #090e17 0%, #0f172a 50%, #090e17 100%) !important;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.25) !important;
+  color: #e2e8f0 !important;
+  padding: 10px 0 !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  overflow: hidden !important;
+  position: relative !important;
+  z-index: 1010 !important;
+  width: 100% !important;
+  display: block !important;
+}
+.live-marquee-track {
+  display: flex !important;
+  white-space: nowrap !important;
+  animation: marqueeScroll 35s linear infinite !important;
+  gap: 40px !important;
+  width: max-content !important;
+}
+.live-marquee-track:hover {
+  animation-play-state: paused !important;
+}
+.marquee-badge {
+  background: linear-gradient(135deg, #f59e0b, #ea580c) !important;
+  color: #ffffff !important;
+  font-size: 0.72rem !important;
+  padding: 3px 10px !important;
+  border-radius: 6px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+}
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* 2. Elevated Hero Section V2 */
+.hero-wrapper-v2 {
+  position: relative !important;
+  background: radial-gradient(circle at 15% 25%, #172554 0%, #0f172a 45%, #050811 100%) !important;
+  color: #ffffff !important;
+  padding: 70px 0 120px !important;
+  overflow: hidden !important;
+  min-height: 520px !important;
+}
+.hero-glow-orb-1 {
+  position: absolute !important;
+  top: -100px !important;
+  left: -100px !important;
+  width: 500px !important;
+  height: 500px !important;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.4) 0%, transparent 70%) !important;
+  filter: blur(60px) !important;
+  pointer-events: none !important;
+}
+.hero-glow-orb-2 {
+  position: absolute !important;
+  bottom: 0 !important;
+  right: -50px !important;
+  width: 600px !important;
+  height: 600px !important;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.25) 0%, transparent 70%) !important;
+  filter: blur(80px) !important;
+  pointer-events: none !important;
+}
+.hero-badge-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  padding: 8px 20px !important;
+  border-radius: 9999px !important;
+  border: 1px solid rgba(251, 191, 36, 0.35) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  color: #fbbf24 !important;
+  margin-bottom: 22px !important;
+}
+.hero-heading-v2 {
+  font-size: 3.4rem !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.03em !important;
+  color: #ffffff !important;
+  margin-bottom: 20px !important;
+}
+.text-gradient-gold {
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.hero-subtext-v2 {
+  font-size: 1.15rem !important;
+  color: #cbd5e1 !important;
+  max-width: 580px !important;
+  line-height: 1.7 !important;
+  margin-bottom: 32px !important;
+}
+.hero-trust-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 28px !important;
+  margin-top: 32px !important;
+  padding-top: 24px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+.hero-trust-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+.hero-trust-item i {
+  font-size: 1.6rem !important;
+  color: #fbbf24 !important;
+}
+.hero-trust-title {
+  font-weight: 800 !important;
+  font-size: 1.15rem !important;
+  color: #ffffff !important;
+  line-height: 1.1 !important;
+}
+.hero-trust-desc {
+  font-size: 0.76rem !important;
+  color: #94a3b8 !important;
+}
+
+.hero-wrapper-v2 .btn-outline-light {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.45) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(8px) !important;
+  font-weight: 700 !important;
+  transition: all 0.2s ease !important;
+}
+.hero-wrapper-v2 .btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.22) !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* 3. 3D Canvas Telemetry & HUD Controls */
+.canvas-3d-container {
+  height: 420px !important;
+  width: 100% !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5) !important;
+  position: relative !important;
+}
+.canvas-hud-badge {
+  position: absolute !important;
+  top: 14px !important;
+  background: rgba(15, 23, 42, 0.88) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  color: #f8fafc !important;
+  padding: 6px 14px !important;
+  border-radius: 10px !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  z-index: 10 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+.canvas-hud-left { left: 14px !important; }
+.canvas-hud-right { right: 14px !important; }
+
+.canvas-telemetry-bottom {
+  position: absolute !important;
+  bottom: 14px !important;
+  left: 14px !important;
+  right: 14px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  pointer-events: none !important;
+  z-index: 10 !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+}
+.telemetry-chip {
+  background: rgba(15, 23, 42, 0.88) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  padding: 6px 14px !important;
+  border-radius: 9999px !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  color: #e2e8f0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+.canvas-action-controls {
+  pointer-events: auto !important;
+  display: flex !important;
+  gap: 6px !important;
+}
+.btn-canvas-action {
+  background: rgba(30, 41, 59, 0.92) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  padding: 6px 12px !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+.btn-canvas-action:hover {
+  background: #2563eb !important;
+  border-color: #60a5fa !important;
+  transform: translateY(-1px) !important;
+}
+
+/* 4. Next-Gen Floating Search Console */
+.search-console-wrapper {
+  margin-top: -65px !important;
+  position: relative !important;
+  z-index: 40 !important;
+}
+.search-console-card {
+  background: #ffffff !important;
+  border-radius: 24px !important;
+  padding: 30px !important;
+  box-shadow: 0 25px 60px -15px rgba(15, 23, 42, 0.2), 0 0 0 1px rgba(15, 23, 42, 0.06) !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+.search-tab-bar {
+  display: inline-flex !important;
+  background: #f1f5f9 !important;
+  padding: 6px !important;
+  border-radius: 14px !important;
+  margin-bottom: 24px !important;
+  gap: 4px !important;
+}
+.search-tab-btn {
+  border: none !important;
+  background: transparent !important;
+  color: #64748b !important;
+  font-weight: 700 !important;
+  font-size: 0.92rem !important;
+  padding: 8px 20px !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+.search-tab-btn:hover {
+  color: #0f172a !important;
+}
+.search-tab-btn.active {
+  background: #ffffff !important;
+  color: #2563eb !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+.search-field-box {
+  background: #f8fafc !important;
+  border: 1.5px solid #e2e8f0 !important;
+  border-radius: 16px !important;
+  padding: 12px 18px !important;
+  transition: all 0.2s ease !important;
+  position: relative !important;
+}
+.search-field-box:focus-within {
+  border-color: #2563eb !important;
+  background: #ffffff !important;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12) !important;
+}
+.search-field-label-v2 {
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+  color: #64748b !important;
+  margin-bottom: 3px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+.search-field-input-v2 {
+  width: 100% !important;
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  outline: none !important;
+}
+.search-field-subtext {
+  font-size: 0.74rem !important;
+  color: #94a3b8 !important;
+  margin-top: 2px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.quick-date-chips {
+  display: flex !important;
+  gap: 6px !important;
+  margin-top: 6px !important;
+}
+.quick-date-btn {
+  border: 1px solid #cbd5e1 !important;
+  background: #ffffff !important;
+  color: #475569 !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  padding: 2px 10px !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+.quick-date-btn:hover, .quick-date-btn.active {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border-color: #2563eb !important;
+}
+
+/* 5. Promotional Voucher / Coupon Cards */
+.voucher-card {
+  background: #ffffff !important;
+  border-radius: 18px !important;
+  border: 1.5px dashed #cbd5e1 !important;
+  padding: 22px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  position: relative !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03) !important;
+  height: 100% !important;
+}
+.voucher-card:hover {
+  transform: translateY(-4px) !important;
+  border-color: #f59e0b !important;
+  box-shadow: 0 12px 28px rgba(245, 158, 11, 0.15) !important;
+}
+.voucher-code-badge {
+  background: #eff6ff !important;
+  border: 1.5px solid #bfdbfe !important;
+  color: #1d4ed8 !important;
+  font-family: monospace !important;
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  padding: 6px 14px !important;
+  border-radius: 8px !important;
+  letter-spacing: 0.08em !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+.btn-copy-code {
+  background: #f1f5f9 !important;
+  border: none !important;
+  color: #475569 !important;
+  padding: 6px 14px !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+  font-size: 0.78rem !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+.btn-copy-code:hover {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
+
+/* 6. Fleet Showcase Cards V2 */
+.fleet-card-v2 {
+  background: #ffffff !important;
+  border-radius: 20px !important;
+  border: 1px solid #e2e8f0 !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.fleet-card-v2:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 20px 35px -5px rgba(15, 23, 42, 0.15) !important;
+  border-color: #93c5fd !important;
+}
+.fleet-img-wrap {
+  position: relative !important;
+  height: 220px !important;
+  overflow: hidden !important;
+}
+.fleet-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.5s ease !important;
+}
+.fleet-card-v2:hover .fleet-img {
+  transform: scale(1.08) !important;
+}
+.fleet-badge-tag {
+  position: absolute !important;
+  top: 14px !important;
+  left: 14px !important;
+  background: rgba(15, 23, 42, 0.88) !important;
+  backdrop-filter: blur(6px) !important;
+  color: #fbbf24 !important;
+  font-size: 0.75rem !important;
+  font-weight: 800 !important;
+  padding: 4px 12px !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(251, 191, 36, 0.35) !important;
+}
+.fleet-body {
+  padding: 24px !important;
+  flex-grow: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+.fleet-spec-list {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin: 14px 0 20px !important;
+}
+.fleet-spec-pill {
+  background: #f1f5f9 !important;
+  color: #334155 !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  padding: 4px 10px !important;
+  border-radius: 6px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+}
+
+/* 7. Live Virtual Bus Radar Simulation */
+.radar-simulation-card {
+  background: radial-gradient(circle at 10% 20%, #0f172a 0%, #1e293b 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 24px !important;
+  padding: 32px !important;
+  color: #ffffff !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+.radar-simulation-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(37, 99, 235, 0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+.radar-progress-track {
+  height: 8px !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-radius: 9999px !important;
+  position: relative !important;
+  margin: 26px 0 !important;
+}
+.radar-progress-fill {
+  height: 100% !important;
+  background: linear-gradient(90deg, #2563eb, #fbbf24) !important;
+  border-radius: 9999px !important;
+  width: 68% !important;
+  position: relative !important;
+}
+.radar-bus-icon {
+  position: absolute !important;
+  right: -14px !important;
+  top: -14px !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background: #f59e0b !important;
+  color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 15px !important;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.8) !important;
+  animation: radarPulse 1.8s infinite !important;
+}
+@keyframes radarPulse {
+  0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+  70% { box-shadow: 0 0 0 14px rgba(245, 158, 11, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+}
+
+/* 8. Floating WhatsApp / Help Button */
+.floating-whatsapp-widget {
+  position: fixed !important;
+  bottom: 24px !important;
+  right: 24px !important;
+  z-index: 1030 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background: #25d366 !important;
+  color: #ffffff !important;
+  padding: 10px 18px !important;
+  border-radius: 9999px !important;
+  font-weight: 700 !important;
+  font-size: 0.9rem !important;
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4) !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+.floating-whatsapp-widget:hover {
+  background: #20ba5a !important;
+  color: #ffffff !important;
+  transform: translateY(-3px) scale(1.03) !important;
+  box-shadow: 0 15px 30px rgba(37, 211, 102, 0.55) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .hero-heading-v2 {
+    font-size: 2.3rem !important;
+  }
+  .search-console-wrapper {
+    margin-top: -35px !important;
+  }
+  .search-console-card {
+    padding: 20px !important;
+  }
+  .canvas-3d-container {
+    height: 300px !important;
+    margin-top: 20px !important;
+  }
+}

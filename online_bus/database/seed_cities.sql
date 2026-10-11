@@ -1,0 +1,186 @@
+-- Seed Comprehensive Indian Cities
+USE `shreenathji_travels`;
+
+INSERT INTO `indian_cities` (`name`, `state`, `is_popular`) VALUES
+-- Gujarat
+('Ahmedabad', 'Gujarat', 1),
+('Surat', 'Gujarat', 1),
+('Vadodara', 'Gujarat', 1),
+('Rajkot', 'Gujarat', 1),
+('Bhavnagar', 'Gujarat', 1),
+('Jamnagar', 'Gujarat', 1),
+('Junagadh', 'Gujarat', 1),
+('Gandhinagar', 'Gujarat', 1),
+('Anand', 'Gujarat', 0),
+('Bhuj', 'Gujarat', 1),
+('Morbi', 'Gujarat', 0),
+('Mehsana', 'Gujarat', 0),
+('Vapi', 'Gujarat', 1),
+('Navsari', 'Gujarat', 0),
+('Bharuch', 'Gujarat', 0),
+('Porbandar', 'Gujarat', 0),
+('Somnath', 'Gujarat', 1),
+('Dwarka', 'Gujarat', 1),
+('Palanpur', 'Gujarat', 0),
+('Godhra', 'Gujarat', 0),
+('Valsad', 'Gujarat', 0),
+('Veraval', 'Gujarat', 0),
+('Nathdwara', 'Rajasthan', 1),
+('Mount Abu', 'Rajasthan', 1),
+
+-- Maharashtra
+('Mumbai', 'Maharashtra', 1),
+('Pune', 'Maharashtra', 1),
+('Nagpur', 'Maharashtra', 1),
+('Nashik', 'Maharashtra', 1),
+('Chhatrapati Sambhajinagar', 'Maharashtra', 1),
+('Solapur', 'Maharashtra', 0),
+('Kolhapur', 'Maharashtra', 1),
+('Thane', 'Maharashtra', 1),
+('Navi Mumbai', 'Maharashtra', 1),
+('Jalgaon', 'Maharashtra', 0),
+('Amravati', 'Maharashtra', 0),
+('Nanded', 'Maharashtra', 0),
+('Akola', 'Maharashtra', 0),
+('Dhule', 'Maharashtra', 0),
+('Ahmednagar', 'Maharashtra', 0),
+('Shirdi', 'Maharashtra', 1),
+('Mahabaleshwar', 'Maharashtra', 1),
+('Ratnagiri', 'Maharashtra', 0),
+('Satara', 'Maharashtra', 0),
+('Sangli', 'Maharashtra', 0),
+
+-- Rajasthan
+('Jaipur', 'Rajasthan', 1),
+('Udaipur', 'Rajasthan', 1),
+('Jodhpur', 'Rajasthan', 1),
+('Kota', 'Rajasthan', 1),
+('Bikaner', 'Rajasthan', 0),
+('Ajmer', 'Rajasthan', 1),
+('Bhilwara', 'Rajasthan', 0),
+('Alwar', 'Rajasthan', 0),
+('Sikar', 'Rajasthan', 0),
+('Chittorgarh', 'Rajasthan', 0),
+('Jaisalmer', 'Rajasthan', 1),
+('Bharatpur', 'Rajasthan', 0),
+('Pushkar', 'Rajasthan', 1),
+
+-- Madhya Pradesh
+('Indore', 'Madhya Pradesh', 1),
+('Bhopal', 'Madhya Pradesh', 1),
+('Jabalpur', 'Madhya Pradesh', 0),
+('Gwalior', 'Madhya Pradesh', 1),
+('Ujjain', 'Madhya Pradesh', 1),
+('Sagar', 'Madhya Pradesh', 0),
+('Dewas', 'Madhya Pradesh', 0),
+('Satna', 'Madhya Pradesh', 0),
+('Ratlam', 'Madhya Pradesh', 0),
+('Khandwa', 'Madhya Pradesh', 0),
+
+-- Delhi NCR
+('New Delhi', 'Delhi', 1),
+('Noida', 'Uttar Pradesh', 1),
+('Gurugram', 'Haryana', 1),
+('Faridabad', 'Haryana', 0),
+('Ghaziabad', 'Uttar Pradesh', 0),
+
+-- Karnataka
+('Bengaluru', 'Karnataka', 1),
+('Mysuru', 'Karnataka', 1),
+('Hubballi', 'Karnataka', 1),
+('Mangaluru', 'Karnataka', 1),
+('Belagavi', 'Karnataka', 0),
+('Kalaburagi', 'Karnataka', 0),
+('Davanagere', 'Karnataka', 0),
+('Ballari', 'Karnataka', 0),
+('Udupi', 'Karnataka', 1),
+('Hampi', 'Karnataka', 1),
+
+-- Goa
+('Panaji', 'Goa', 1),
+('Margao', 'Goa', 1),
+('Vasco da Gama', 'Goa', 0),
+('Mapusa', 'Goa', 1),
+('Calangute', 'Goa', 1),
+
+-- Telangana
+('Hyderabad', 'Telangana', 1),
+('Warangal', 'Telangana', 0),
+('Nizamabad', 'Telangana', 0),
+('Karimnagar', 'Telangana', 0),
+('Khammam', 'Telangana', 0),
+
+-- Andhra Pradesh
+('Visakhapatnam', 'Andhra Pradesh', 1),
+('Vijayawada', 'Andhra Pradesh', 1),
+('Guntur', 'Andhra Pradesh', 0),
+('Tirupati', 'Andhra Pradesh', 1),
+('Nellore', 'Andhra Pradesh', 0),
+('Kakinada', 'Andhra Pradesh', 0),
+('Kurnool', 'Andhra Pradesh', 0),
+
+-- Tamil Nadu
+('Chennai', 'Tamil Nadu', 1),
+('Coimbatore', 'Tamil Nadu', 1),
+('Madurai', 'Tamil Nadu', 1),
+('Tiruchirappalli', 'Tamil Nadu', 0),
+('Salem', 'Tamil Nadu', 0),
+('Vellore', 'Tamil Nadu', 0),
+('Ooty', 'Tamil Nadu', 1),
+('Rameswaram', 'Tamil Nadu', 1),
+('Kanyakumari', 'Tamil Nadu', 1),
+
+-- Kerala
+('Kochi', 'Kerala', 1),
+('Thiruvananthapuram', 'Kerala', 1),
+('Kozhikode', 'Kerala', 0),
+('Thrissur', 'Kerala', 0),
+('Alappuzha', 'Kerala', 1),
+('Munnar', 'Kerala', 1),
+('Wayanad', 'Kerala', 1),
+
+-- Uttar Pradesh
+('Lucknow', 'Uttar Pradesh', 1),
+('Kanpur', 'Uttar Pradesh', 0),
+('Agra', 'Uttar Pradesh', 1),
+('Varanasi', 'Uttar Pradesh', 1),
+('Prayagraj', 'Uttar Pradesh', 0),
+('Meerut', 'Uttar Pradesh', 0),
+('Bareilly', 'Uttar Pradesh', 0),
+('Aligarh', 'Uttar Pradesh', 0),
+('Mathura', 'Uttar Pradesh', 1),
+('Ayodhya', 'Uttar Pradesh', 1),
+
+-- Uttarakhand
+('Dehradun', 'Uttarakhand', 1),
+('Haridwar', 'Uttarakhand', 1),
+('Rishikesh', 'Uttarakhand', 1),
+('Nainital', 'Uttarakhand', 1),
+('Mussoorie', 'Uttarakhand', 1),
+
+-- Himachal Pradesh
+('Shimla', 'Himachal Pradesh', 1),
+('Manali', 'Himachal Pradesh', 1),
+('Dharamshala', 'Himachal Pradesh', 1),
+('Kullu', 'Himachal Pradesh', 0),
+
+-- Punjab & Chandigarh
+('Chandigarh', 'Chandigarh', 1),
+('Amritsar', 'Punjab', 1),
+('Ludhiana', 'Punjab', 0),
+('Jalandhar', 'Punjab', 0),
+
+-- West Bengal, Odisha, Assam, J&K, Bihar
+('Kolkata', 'West Bengal', 1),
+('Siliguri', 'West Bengal', 1),
+('Darjeeling', 'West Bengal', 1),
+('Bhubaneswar', 'Odisha', 1),
+('Puri', 'Odisha', 1),
+('Guwahati', 'Assam', 1),
+('Patna', 'Bihar', 1),
+('Gaya', 'Bihar', 1),
+('Jammu', 'Jammu & Kashmir', 1),
+('Srinagar', 'Jammu & Kashmir', 1),
+('Katra', 'Jammu & Kashmir', 1),
+('Raipur', 'Chhattisgarh', 1),
+('Ranchi', 'Jharkhand', 1);
